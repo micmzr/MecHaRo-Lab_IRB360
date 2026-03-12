@@ -3,8 +3,8 @@
 <package format="3">
   <name>irb360</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="olmer@gmail.com">ros-industrial</maintainer>
+  <description>IRB360 robot description</description>
+  <maintainer email="micmazur@pg.edu.pl">Michał Mazur</maintainer>
   <license>TODO: License declaration</license>
 
   <test_depend>ament_copyright</test_depend>

@@ -5,11 +5,9 @@
   <version>0.0.1</version>
   <description>Package for ABB IRB360 delta kinematic solver in MoveIt</description>
 
-  <maintainer email="mazur.m.r@gmail.com">Michał Mazur</maintainer>
+  <maintainer email="micmazur@pg.edu.pl">Michał Mazur</maintainer>
   
   <license>LGPL-3</license>
-
-  <author email="mazur.m.r@gmail.com">Michał Mazur</author>
   
   <buildtool_depend>ament_cmake</buildtool_depend>
   <depend>moveit_common</depend>

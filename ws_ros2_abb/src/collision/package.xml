@@ -3,8 +3,8 @@
 <package format="3">
   <name>collision</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="mmazur@todo.todo">mmazur</maintainer>
+  <description>Simple movement evaluation</description>
+  <maintainer email="micmazur@pg.edu.pl">Michał Mazur</maintainer>
   <license>TODO: License declaration</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>

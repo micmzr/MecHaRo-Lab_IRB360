@@ -6,7 +6,7 @@
   <description>
     This package take the four joint angles of a delta IRB360 robot as input, and publishes the complete joints set.
   </description>
-  <maintainer email="mazur.m.r@gmail.com">Michał Mazur</maintainer>
+  <maintainer email="micmazur@pg.edu.pl">Michał Mazur</maintainer>
   <license>BSD</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
