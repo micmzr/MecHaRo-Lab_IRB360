@@ -1,0 +1,7 @@
+<library path="moveit_irb360_kinematics_plugin">
+  <class name="irb360_kinematics_plugin/IRB360KinematicsPlugin" type="irb360_kinematics_plugin::IRB360KinematicsPlugin" base_class_type="kinematics::KinematicsBase">
+    <description>
+      An implementation of ABB IRB360 delta robot kinematics as a plugin
+    </description>
+  </class>
+</library>

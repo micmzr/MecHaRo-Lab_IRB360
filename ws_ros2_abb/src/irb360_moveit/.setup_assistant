@@ -1,0 +1,23 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: irb360
+    relative_path: urdf/irb360.urdf
+  srdf:
+    relative_path: config/irb360.srdf
+  package_settings:
+    author_name: "Michał Mazur "
+    author_email: mazur.m.r@gmail.com
+    generated_timestamp: 1695555179
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position

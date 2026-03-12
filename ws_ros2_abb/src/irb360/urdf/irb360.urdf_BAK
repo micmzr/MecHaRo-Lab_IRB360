@@ -1,0 +1,1073 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="irb360">
+<link name="base_footprint">
+    <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+            <box size="0.001 0.001 0.001" />
+        </geometry>
+    </visual>
+</link>
+
+<joint name="base_footprint_joint" type="fixed">
+    <origin xyz="0 0 0.001" rpy="0 0 0" />
+    <parent link="base_footprint"/>
+    <child link="base_link" />
+</joint>
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.000303780012679435 -3.71074928174513E-05 -0.156335278634856"
+        rpy="0 0 0" />
+      <mass
+        value="61.9547519471664" />
+      <inertia
+        ixx="1.82767926132314"
+        ixy="-0.00176633362838155"
+        ixz="0.000242512658554882"
+        iyy="1.82756729994537"
+        iyz="-0.000210784916645732"
+        izz="3.28584242183912" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Link_Axis1">
+    <inertial>
+      <origin
+        xyz="0.144255419365142 0.00949108904916839 0.010816437161317"
+        rpy="0 0 0" />
+      <mass
+        value="1.39734160687879" />
+      <inertia
+        ixx="0.000814475609063002"
+        ixy="1.56595367720714E-05"
+        ixz="-0.00046600655267779"
+        iyy="0.00679319603432314"
+        iyz="1.21084606518063E-06"
+        izz="0.00681961484233473" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/Link_Axis1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/Link_Axis1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1"
+    type="continuous">
+    <origin
+      xyz="0.2 0 -0.275"
+      rpy="0 -0.22997 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link_Axis1" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link name="Link_Axis1_1_1" />
+  <joint
+    name="joint_1_1_1"
+    type="continuous">
+    <origin
+      xyz="0.35 -0.041 0"
+      rpy="0 0.21539 0" />
+    <parent
+      link="Link_Axis1" />
+    <child
+      link="Link_Axis1_1_1" />
+    <axis
+      xyz="0 1 0" />
+    <!--mimic joint="joint_4" multiplier="0" offset="0" /-->
+  </joint>
+  <link name="Link_Axis1_1_2" />
+  <joint
+    name="joint_1_1_2"
+    type="continuous">
+    <parent
+      link="Link_Axis1_1_1" />
+    <child
+      link="Link_Axis1_1_2" />
+    <axis
+      xyz="0 0 1" />
+    <!--mimic joint="joint_4" multiplier="0" offset="0" /-->
+  </joint>
+  <link name="Link_Axis1_1_3">
+      <inertial>
+      <origin
+        xyz="-0.252441465973729 -0.00477249783307858 -0.310242810313194"
+        rpy="0 0 0" />
+      <mass
+        value="0.136500570719" />
+      <inertia
+        ixx="0.00304668823142722"
+        ixy="-3.59054612106447E-05"
+        ixz="-0.00247543225331226"
+        iyy="0.00506042186723846"
+        iyz="-4.41288062387584E-05"
+        izz="0.00201864512502998" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/Link_Axis1_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/Link_Axis1_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1_1_3"
+    type="continuous">
+    <parent
+      link="Link_Axis1_1_2" />
+    <child
+      link="Link_Axis1_1_3" />
+    <axis
+      xyz="0 1 0" />
+    <!--mimic joint="joint_4" multiplier="0" offset="0" /-->      
+  </joint>
+  <link name="Link_Axis1_2_1" />
+  <joint
+    name="joint_1_2_1"
+    type="continuous">
+    <origin
+      xyz="0.35 0.059 0"
+      rpy="0 0.21539 0" />
+    <parent
+      link="Link_Axis1" />
+    <child
+      link="Link_Axis1_2_1" />
+    <axis
+      xyz="0 1 0" />
+    <!--mimic joint="joint_1_1_1" multiplier="1" offset="0" /-->
+  </joint>
+  <link name="Link_Axis1_2_2" />
+  <joint
+    name="joint_1_2_2"
+    type="continuous">
+    <parent
+      link="Link_Axis1_2_1" />
+    <child
+      link="Link_Axis1_2_2" />
+    <axis
+      xyz="0 0 1" />
+    <!--mimic joint="joint_1_1_2" multiplier="1" offset="0" /-->
+  </joint>  
+  <link
+    name="Link_Axis1_2_3">
+    <inertial>
+      <origin
+        xyz="-0.252442324283929 -0.00422750121127362 -0.310250022671996"
+        rpy="0 0 0" />
+      <mass
+        value="0.136500570806673" />
+      <inertia
+        ixx="0.00304669115151461"
+        ixy="-3.59054399772105E-05"
+        ixz="-0.00247543164596985"
+        iyy="0.00506042186777227"
+        iyz="-4.41288204780545E-05"
+        izz="0.00201864220149881" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/Link_Axis1_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/Link_Axis1_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1_2_3"
+    type="continuous">
+    <parent
+      link="Link_Axis1_2_2" />
+    <child
+      link="Link_Axis1_2_3" />
+    <axis
+      xyz="0 1 0" />
+    <!--mimic joint="joint_1_1_3" multiplier="1" offset="0" /-->      
+  </joint>
+  <link
+    name="Link_Axis2">
+    <inertial>
+      <origin
+        xyz="-0.0653350341027566 -0.124250286754555 0.0361925935990031"
+        rpy="0 0 0" />
+      <mass
+        value="1.39734117524422" />
+      <inertia
+        ixx="0.00522735251235428"
+        ixy="-0.00252892654833098"
+        ixz="0.000755976389484916"
+        iyy="0.00271127066570145"
+        iyz="0.001232886760729"
+        izz="0.00648861324617836" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/Link_Axis2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/Link_Axis2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2"
+    type="continuous">
+    <origin
+      xyz="-0.1 -0.17321 -0.275"
+      rpy="0 0.1144 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link_Axis2" />
+    <!--axis
+      xyz="-0.86036 0.5 0.098857" /-->
+    <axis
+      xyz="0.86036 -0.5 0" />      
+  </joint>
+  <link name="Link_Axis2_1_1" />
+  <joint
+    name="joint_2_1_1"
+    type="continuous">
+    <origin
+      xyz="-0.21366 -0.27463 0.055756"
+      rpy="0 -0.1037 0" />
+    <parent
+      link="Link_Axis2" />
+    <child
+      link="Link_Axis2_1_1" />
+    <axis
+      xyz="0.86036 -0.5 0" />
+    <!--mimic joint="joint_4" multiplier="0" offset="0" /-->
+  </joint>
+  <link name="Link_Axis2_1_2" />
+  <joint
+    name="joint_2_1_2"
+    type="continuous">
+    <parent
+      link="Link_Axis2_1_1" />
+    <child
+      link="Link_Axis2_1_2" />
+    <axis
+      xyz="0 0 1" />
+    <!--mimic joint="joint_4" multiplier="0" offset="0" /-->
+  </joint>
+  <link
+    name="Link_Axis2_1_3">
+    <inertial>
+      <origin
+        xyz="0.123164196335967 0.217064783189601 -0.312591918393584"
+        rpy="0 0 0" />
+      <mass
+        value="0.136500649604261" />
+      <inertia
+        ixx="0.0045797122136739"
+        ixy="-0.000846178727435319"
+        ixz="0.0012192153591946"
+        iyy="0.00357353963322045"
+        iyz="0.00214328972314806"
+        izz="0.00197250341278118" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/Link_Axis2_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/Link_Axis2_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2_1_3"
+    type="continuous">
+    <parent
+      link="Link_Axis2_1_2" />
+    <child
+      link="Link_Axis2_1_3" />
+    <axis
+      xyz="0.86036 -0.5 0" />
+    <!--mimic joint="joint_4" multiplier="0" offset="0" /-->      
+  </joint>
+  <link name="Link_Axis2_2_1" />
+  <joint
+    name="joint_2_2_1"
+    type="continuous">
+    <origin
+      xyz="-0.12762 -0.32463 0.065642"
+      rpy="0 -0.10369 0" />
+    <parent
+      link="Link_Axis2" />
+    <child
+      link="Link_Axis2_2_1" />
+    <axis
+      xyz="0.86036 -0.5 0" />
+    <!--mimic joint="joint_2_1_1" multiplier="1" offset="0" /-->
+  </joint>
+  <link name="Link_Axis2_2_2" />
+  <joint
+    name="joint_2_2_2"
+    type="continuous">
+    <parent
+      link="Link_Axis2_2_1" />
+    <child
+      link="Link_Axis2_2_2" />
+    <axis
+      xyz="0 0 1" />
+    <!--mimic joint="joint_2_1_2" multiplier="1" offset="0" /-->      
+  </joint>
+  <link
+    name="Link_Axis2_2_3">
+    <inertial>
+      <origin
+        xyz="0.12364025926514 0.216798368522092 -0.312588314651836"
+        rpy="0 0 0" />
+      <mass
+        value="0.136500658852826" />
+      <inertia
+        ixx="0.00457970760233354"
+        ixy="-0.000846182790309176"
+        ixz="0.00121922030130266"
+        iyy="0.00357353963555911"
+        iyz="0.00214328812233074"
+        izz="0.00197250804355331" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/Link_Axis2_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/Link_Axis2_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2_2_3"
+    type="continuous">
+    <parent
+      link="Link_Axis2_2_2" />
+    <child
+      link="Link_Axis2_2_3" />
+    <axis
+      xyz="0.86036 -0.5 0" />
+    <!--mimic joint="joint_2_1_3" multiplier="1" offset="0" /-->
+  </joint>
+  <link
+    name="Link_Axis3">
+    <inertial>
+      <origin
+        xyz="-0.0816665594626892 0.114759186191428 0.0343160630945188"
+        rpy="0 0 0" />
+      <mass
+        value="1.39734185379635" />
+      <inertia
+        ixx="0.00525483397353537"
+        ixy="0.00251459964980353"
+        ixz="0.000750904929794468"
+        iyy="0.00268534966772001"
+        iyz="-0.00123931326276788"
+        izz="0.0064871078059897" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/Link_Axis3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/Link_Axis3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_3"
+    type="continuous">
+    <origin
+      xyz="-0.1 0.17321 -0.275"
+      rpy="0 0.1144 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link_Axis3" />
+    <!--axis
+      xyz="0.86036 0.5 0.098857" /-->
+    <axis
+      xyz="-0.86036 -0.5 0" />      
+  </joint>
+  <link name="Link_Axis3_1_1" />
+  <joint
+    name="joint_3_1_1"
+    type="continuous">
+    <origin
+      xyz="-0.14311 0.31563 0.063862"
+      rpy="0 -0.11336 0" />
+    <parent
+      link="Link_Axis3" />
+    <child
+      link="Link_Axis3_1_1" />
+    <axis
+      xyz="-0.86036 -0.5 0" />
+  <!--mimic joint="joint_4" multiplier="0" offset="0" /-->
+  </joint>
+  <link name="Link_Axis3_1_2" />
+  <joint
+    name="joint_3_1_2"
+    type="continuous">
+    <parent
+      link="Link_Axis3_1_1" />
+    <child
+      link="Link_Axis3_1_2" />
+    <axis
+      xyz="0 0 1" />
+    <!--mimic joint="joint_4" multiplier="0" offset="0" /-->
+  </joint>
+  <link
+    name="Link_Axis3_1_3">
+    <inertial>
+      <origin
+        xyz="0.128405710830037 -0.21229314021824 -0.31375707709026"
+        rpy="0 0 0" />
+      <mass
+        value="0.136500646683187" />
+      <inertia
+        ixx="0.0045417882461785"
+        ixy="0.000860649821330782"
+        ixz="0.0012710709315975"
+        iyy="0.00363461155212516"
+        iyz="-0.0021066801754962"
+        izz="0.00194935545717444" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/Link_Axis3_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/Link_Axis3_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_3_1_3"
+    type="continuous">
+    <parent
+      link="Link_Axis3_1_2" />
+    <child
+      link="Link_Axis3_1_3" />
+    <axis
+      xyz="-0.86036 -0.5 0" />
+    <!--mimic joint="joint_4" multiplier="0" offset="0" /-->
+  </joint>
+  <link name="Link_Axis3_2_1" />
+  <joint
+    name="joint_3_2_1"
+    type="continuous">
+    <origin
+      xyz="-0.22915 0.26563 0.053977"
+      rpy="0 -0.11336 0" />
+    <parent
+      link="Link_Axis3" />
+    <child
+      link="Link_Axis3_2_1" />
+    <axis
+      xyz="-0.86036 -0.5 0" />
+  <!--mimic joint="joint_3_1_1" multiplier="1" offset="0" /-->      
+  </joint>
+  <link name="Link_Axis3_2_2" />
+  <joint
+    name="joint_3_2_2"
+    type="continuous">
+    <parent
+      link="Link_Axis3_2_1" />
+    <child
+      link="Link_Axis3_2_2" />
+    <axis
+      xyz="0 0 1" />
+  <!--mimic joint="joint_3_1_2" multiplier="1" offset="0" /-->
+  </joint>
+  <link
+    name="Link_Axis3_2_3">
+    <inertial>
+      <origin
+        xyz="0.127936260397935 -0.212570008079634 -0.313761921759684"
+        rpy="0 0 0" />
+      <mass
+        value="0.136500656635308" />
+      <inertia
+        ixx="0.00454178824723768"
+        ixy="0.000860649819753029"
+        ixz="0.0012710709312438"
+        iyy="0.00363461154196049"
+        iyz="-0.002106680180426"
+        izz="0.00194935545947885" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/Link_Axis3_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/Link_Axis3_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_3_2_3"
+    type="continuous">
+    <parent
+      link="Link_Axis3_2_2" />
+    <child
+      link="Link_Axis3_2_3" />
+    <axis
+      xyz="-0.86036 -0.5 0" />
+  <!--mimic joint="joint_3_1_3" multiplier="1" offset="0" /-->
+  </joint>
+  <link
+    name="Link_Axis4">
+    <inertial>
+      <origin
+        xyz="9.3257985461457E-06 5.67210065847627E-06 -0.0493908262802903"
+        rpy="0 0 0" />
+      <mass
+        value="0.0223116041183814" />
+      <inertia
+        ixx="1.21077458740538E-05"
+        ixy="-3.67800662100836E-08"
+        ixz="-2.40797604451512E-09"
+        iyy="1.21554070497255E-05"
+        iyz="-1.36624950152957E-09"
+        izz="9.02219266048407E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/Link_Axis4_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/Link_Axis4_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.102"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link_Axis4" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Link_Axis4_2">
+    <inertial>
+      <origin
+        xyz="-5.31163387215079E-10 9.49681703944246E-10 -2.41195952099815E-14"
+        rpy="0 0 0" />
+      <mass
+        value="0.0010889263141339" />
+      <inertia
+        ixx="2.96701375421384E-08"
+        ixy="-2.6566265658313E-22"
+        ixz="-1.07697257018399E-12"
+        iyy="2.96701374931256E-08"
+        iyz="4.89011967649224E-18"
+        izz="5.33348872993866E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/Link_Axis4_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.501960784313725 0.501960784313725 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/Link_Axis4_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4_2"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.11"
+      rpy="0 0 0" />
+    <parent
+      link="Link_Axis4" />
+    <child
+      link="Link_Axis4_2" />
+    <axis
+      xyz="0.87276 0.48814 0" />
+    <!--mimic joint="joint_4" multiplier="0" offset="0" /-->      
+  </joint>
+  <link
+    name="Link_Axis4_3">
+    <inertial>
+      <origin
+        xyz="4.77287182985873E-05 4.29943629081103E-06 -0.265978890024669"
+        rpy="0 0 0" />
+      <mass
+        value="0.0636123532085452" />
+      <inertia
+        ixx="0.0014171124151755"
+        ixy="4.30813188223102E-08"
+        ixz="2.1541891941554E-07"
+        iyy="0.00141705952054768"
+        iyz="1.29449212356341E-09"
+        izz="1.34442397992355E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/Link_Axis4_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/Link_Axis4_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4_3"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_Axis4_2" />
+    <child
+      link="Link_Axis4_3" />
+    <axis
+      xyz="0.48814 -0.87276 0" />
+    <!--mimic joint="joint_4" multiplier="0" offset="0" /-->
+  </joint>
+  <link
+    name="Link_Axis4_4">
+    <inertial>
+      <origin
+        xyz="1.15385241722202E-05 -2.30609064843535E-07 -0.274752338280936"
+        rpy="0 0 0" />
+      <mass
+        value="0.263475765303748" />
+      <inertia
+        ixx="0.00599202163229709"
+        ixy="3.23071879718428E-08"
+        ixz="8.35045669006413E-07"
+        iyy="0.00599198204216406"
+        iyz="1.14395164182239E-07"
+        izz="1.96511438706272E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/Link_Axis4_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/Link_Axis4_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4_4"
+    type="prismatic">
+    <origin
+      xyz="0 0 -0.018501"
+      rpy="0 0 0" />
+    <parent
+      link="Link_Axis4_3" />
+    <child
+      link="Link_Axis4_4" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+    <!-- mimic joint="joint_4" multiplier="0" offset="0" / -->
+  </joint>
+  <link
+    name="Link_Axis4_5">
+    <inertial>
+      <origin
+        xyz="-3.38906804841512E-11 2.28501245690699E-10 1.2747580768746E-12"
+        rpy="0 0 0" />
+      <mass
+        value="0.00108892631413387" />
+      <inertia
+        ixx="2.96701375421374E-08"
+        ixy="-2.1950655979108E-22"
+        ixz="-1.07696941943708E-12"
+        iyy="2.96701374931253E-08"
+        iyz="4.89017205355486E-18"
+        izz="5.33348872993867E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/Link_Axis4_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.501960784313725 0.501960784313725 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/Link_Axis4_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4_5"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.563"
+      rpy="0 0 0" />
+    <parent
+      link="Link_Axis4_4" />
+    <child
+      link="Link_Axis4_5" />
+    <axis
+      xyz="-0.48818 0.87274 0" />
+    <!--mimic joint="joint_4_3" multiplier="1" offset="0" /-->
+  </joint>
+  <link
+    name="Link_Axis4_6">
+    <inertial>
+      <origin
+        xyz="1.98088533512928E-05 8.55328149812147E-06 -0.0350125506059855"
+        rpy="0 0 0" />
+      <mass
+        value="0.0203923395921574" />
+      <inertia
+        ixx="4.36183482216886E-06"
+        ixy="-4.02541868207121E-08"
+        ixz="1.1056913218743E-08"
+        iyy="4.42008725995418E-06"
+        iyz="1.41054416199335E-09"
+        izz="1.75199237802778E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/Link_Axis4_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/Link_Axis4_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4_6"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_Axis4_5" />
+    <child
+      link="Link_Axis4_6" />
+    <axis
+      xyz="-0.87274 -0.48818 0" />
+    <!--mimic joint="joint_4_2" multiplier="1" offset="0" /-->
+  </joint>
+  <link
+    name="Link_Axis4_7">
+    <inertial>
+      <origin
+        xyz="5.61621890788805E-05 3.26958054480375E-08 -0.0350171254897329"
+        rpy="0 0 0" />
+      <mass
+        value="0.165245050856708" />
+      <inertia
+        ixx="7.27337400253683E-05"
+        ixy="4.31741204390692E-10"
+        ixz="-9.59329766785455E-08"
+        iyy="7.32043056187117E-05"
+        iyz="1.45322856106602E-11"
+        izz="0.000136934152393261" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/Link_Axis4_7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irb360/meshes/visual/Link_Axis4_7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4_7"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_Axis4_6" />
+    <child
+      link="Link_Axis4_7" />
+    <axis
+      xyz="0 0 1" />
+    <!--mimic joint="joint_4" multiplier="-1" offset="0" /-->
+  </joint>
+</robot>

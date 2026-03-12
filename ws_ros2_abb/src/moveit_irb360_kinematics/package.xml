@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>moveit_irb360_kinematics</name>
+  <version>0.0.1</version>
+  <description>Package for ABB IRB360 delta kinematic solver in MoveIt</description>
+
+  <maintainer email="mazur.m.r@gmail.com">Michał Mazur</maintainer>
+  
+  <license>LGPL-3</license>
+
+  <author email="mazur.m.r@gmail.com">Michał Mazur</author>
+  
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>moveit_common</depend>
+
+  <depend>moveit_core</depend>
+  <depend>class_loader</depend>
+  <depend>pluginlib</depend>
+  <depend>eigen</depend>
+  <depend>tf2</depend>
+  <depend>tf2_kdl</depend>
+  <depend>orocos_kdl_vendor</depend>
+  <depend>moveit_msgs</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+    <moveit_core plugin="${prefix}/irb360_kinematics_plugin_description.xml"/>
+  </export>
+
+</package>

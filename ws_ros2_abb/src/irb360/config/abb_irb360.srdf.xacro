@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="irb360">
+
+  <xacro:include filename="$(find irb360)/config/abb_irb360_macro.srdf.xacro"/>
+  <xacro:irb360_srdf/>
+
+</robot>
