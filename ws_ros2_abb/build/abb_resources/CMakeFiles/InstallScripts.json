@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_resources/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

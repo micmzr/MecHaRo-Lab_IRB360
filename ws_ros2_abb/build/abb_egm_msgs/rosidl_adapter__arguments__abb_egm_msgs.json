@@ -1,7 +1,0 @@
-{
-  "package_name": "abb_egm_msgs",
-  "non_idl_tuples": [
-    "/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2_msgs/abb_egm_msgs:msg/EGMChannelState.msg",
-    "/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2_msgs/abb_egm_msgs:msg/EGMState.msg"
-  ]
-}
