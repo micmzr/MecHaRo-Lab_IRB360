@@ -1,0 +1,36 @@
+[0.023s] Invoking command in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_egm_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2_msgs/abb_egm_msgs -DCMAKE_INSTALL_PREFIX=/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_egm_msgs
+[0.032s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.033s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.033s]   CMake.
+[0.033s] 
+[0.033s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.033s]   to tell CMake that the project requires at least <min> but has been updated
+[0.033s]   to work with policies introduced by <max> or earlier.
+[0.033s] 
+[0.033s] [0m
+[0.065s] -- The C compiler identification is GNU 15.2.0
+[0.129s] -- The CXX compiler identification is GNU 15.2.0
+[0.137s] -- Detecting C compiler ABI info
+[0.195s] -- Detecting C compiler ABI info - done
+[0.204s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.204s] -- Detecting C compile features
+[0.204s] -- Detecting C compile features - done
+[0.213s] -- Detecting CXX compiler ABI info
+[0.272s] -- Detecting CXX compiler ABI info - done
+[0.286s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.286s] -- Detecting CXX compile features
+[0.286s] -- Detecting CXX compile features - done
+[0.293s] -- Found ament_cmake: 2.8.8 (/opt/ros/lyrical/share/ament_cmake/cmake)
+[0.544s] -- Found rosidl_default_generators: 1.8.1 (/opt/ros/lyrical/share/rosidl_default_generators/cmake)
+[0.549s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.585s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.619s] -- Found rosidl_adapter: 5.2.1 (/opt/ros/lyrical/share/rosidl_adapter/cmake)
+[0.622s] -- Found std_msgs: 5.9.3 (/opt/ros/lyrical/share/std_msgs/cmake)
+[0.732s] -- Found Python3: /usr/bin/python3 (found version "3.14.4") found components: Interpreter
+[1.386s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.843s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.305s] -- Found Python3: /usr/bin/python3 (found version "3.14.4") found components: Interpreter Development NumPy Development.Module Development.Embed
+[2.343s] -- Found Python3: /usr/bin/python3 (found version "3.14.4") found components: Interpreter
+[2.357s] -- Configuring done (2.3s)
+[2.392s] -- Generating done (0.0s)
+[2.402s] -- Build files have been written to: /home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_egm_msgs

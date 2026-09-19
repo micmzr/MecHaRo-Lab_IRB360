@@ -1,0 +1,17 @@
+[0.021s] Invoking command in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_resources': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2/abb_resources -DCMAKE_INSTALL_PREFIX=/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_resources
+[0.108s] -- The C compiler identification is GNU 15.2.0
+[0.149s] -- The CXX compiler identification is GNU 15.2.0
+[0.156s] -- Detecting C compiler ABI info
+[0.204s] -- Detecting C compiler ABI info - done
+[0.213s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.213s] -- Detecting C compile features
+[0.213s] -- Detecting C compile features - done
+[0.222s] -- Detecting CXX compiler ABI info
+[0.281s] -- Detecting CXX compiler ABI info - done
+[0.295s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.295s] -- Detecting CXX compile features
+[0.295s] -- Detecting CXX compile features - done
+[0.305s] -- Found ament_cmake: 2.8.8 (/opt/ros/lyrical/share/ament_cmake/cmake)
+[0.683s] -- Configuring done (0.7s)
+[0.684s] -- Generating done (0.0s)
+[0.685s] -- Build files have been written to: /home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_resources

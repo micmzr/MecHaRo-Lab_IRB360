@@ -8,7 +8,7 @@ Everything presented here is mean to be run on the PC.
 _Install_
 
 ``` bash
-git clone --recursive -b jazzy https://github.com/micmzr/MecHaRo-Lab_IRB360.git
+git clone --recursive -b lyrical https://github.com/micmzr/MecHaRo-Lab_IRB360.git
 cd MecHaRo-Lab_IRB360/ws_ros2_abb
 rosdep install --ignore-src --from-path src/ -y --rosdistro $ROS_DISTRO
 colcon build

@@ -1,0 +1,42 @@
+[0.039s] Invoking command in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_libegm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_libegm -DCMAKE_INSTALL_PREFIX=/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_libegm
+[0.050s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.051s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.051s]   CMake.
+[0.051s] 
+[0.051s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.051s]   to tell CMake that the project requires at least <min> but has been updated
+[0.051s]   to work with policies introduced by <max> or earlier.
+[0.051s] 
+[0.051s] [0m
+[0.116s] -- The CXX compiler identification is GNU 15.2.0
+[0.125s] -- Detecting CXX compiler ABI info
+[0.204s] -- Detecting CXX compiler ABI info - done
+[0.219s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.219s] -- Detecting CXX compile features
+[0.220s] -- Detecting CXX compile features - done
+[0.229s] [33mCMake Warning (dev) at CMakeLists.txt:23 (find_package):
+[0.229s]   Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+[0.229s]   --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+[0.229s]   set the policy and suppress this warning.
+[0.229s] 
+[0.229s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.229s] [0m
+[0.267s] [31mCMake Error at /usr/lib/x86_64-linux-gnu/cmake/Boost-1.90.0/BoostConfig.cmake:141 (find_package):
+[0.267s]   Could not find a package configuration file provided by "boost_system"
+[0.267s]   (requested version 1.90.0) with any of the following names:
+[0.267s] 
+[0.267s]     boost_systemConfig.cmake
+[0.267s]     boost_system-config.cmake
+[0.267s] 
+[0.267s]   Add the installation prefix of "boost_system" to CMAKE_PREFIX_PATH or set
+[0.267s]   "boost_system_DIR" to a directory containing one of the above files.  If
+[0.267s]   "boost_system" provides a separate development package or SDK, be sure it
+[0.268s]   has been installed.
+[0.268s] Call Stack (most recent call first):
+[0.268s]   /usr/lib/x86_64-linux-gnu/cmake/Boost-1.90.0/BoostConfig.cmake:262 (boost_find_component)
+[0.268s]   /usr/share/cmake-4.2/Modules/FindBoost.cmake:610 (find_package)
+[0.268s]   CMakeLists.txt:23 (find_package)
+[0.268s] 
+[0.268s] [0m
+[0.269s] -- Configuring incomplete, errors occurred!
+[0.272s] Invoked command in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_libegm' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_libegm -DCMAKE_INSTALL_PREFIX=/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_libegm

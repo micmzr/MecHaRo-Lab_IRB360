@@ -1,0 +1,52 @@
+-- The CXX compiler identification is GNU 15.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found moveit_common: 2.15.2 (/opt/ros/lyrical/share/moveit_common/cmake)
+-- Found ament_cmake: 2.8.8 (/opt/ros/lyrical/share/ament_cmake/cmake)
+[0mmoveit_irb360_kinematics: You did not request a specific build type: Choosing 'Release' for maximum performance[0m
+-- Found moveit_core: 2.15.2 (/opt/ros/lyrical/share/moveit_core/cmake)
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Found rclcpp: 32.0.3 (/opt/ros/lyrical/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.10.2 (/opt/ros/lyrical/share/rmw_implementation_cmake/cmake)
+-- Found rmw_zenoh_cpp: 0.10.6 (/opt/ros/lyrical/share/rmw_zenoh_cpp/cmake)
+-- Using RMW implementation 'rmw_zenoh_cpp' as default
+-- Found tcb_span: 2.0.3 (/opt/ros/lyrical/share/tcb_span/cmake)
+-- Found rclcpp_lifecycle: 32.0.3 (/opt/ros/lyrical/share/rclcpp_lifecycle/cmake)
+-- Found moveit_ros_planning: 2.15.2 (/opt/ros/lyrical/share/moveit_ros_planning/cmake)
+[33mCMake Warning (dev) at ConfigExtras.cmake:3 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  CMakeLists.txt:19 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[31mCMake Error at /usr/lib/x86_64-linux-gnu/cmake/Boost-1.90.0/BoostConfig.cmake:141 (find_package):
+  Could not find a package configuration file provided by "boost_system"
+  (requested version 1.90.0) with any of the following names:
+
+    boost_systemConfig.cmake
+    boost_system-config.cmake
+
+  Add the installation prefix of "boost_system" to CMAKE_PREFIX_PATH or set
+  "boost_system_DIR" to a directory containing one of the above files.  If
+  "boost_system" provides a separate development package or SDK, be sure it
+  has been installed.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/Boost-1.90.0/BoostConfig.cmake:262 (boost_find_component)
+  /usr/share/cmake-4.2/Modules/FindBoost.cmake:610 (find_package)
+  ConfigExtras.cmake:3 (find_package)
+  CMakeLists.txt:19 (include)
+
+[0m
+-- Configuring incomplete, errors occurred!

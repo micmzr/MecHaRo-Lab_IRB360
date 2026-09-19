@@ -1,0 +1,1 @@
+Invoking command in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/collision': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/collision -DCMAKE_INSTALL_PREFIX=/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/collision

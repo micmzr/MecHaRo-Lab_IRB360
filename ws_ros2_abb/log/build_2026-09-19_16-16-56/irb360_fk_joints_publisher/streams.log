@@ -1,0 +1,37 @@
+[0.027s] Invoking command in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/irb360_fk_joints_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/irb360_fk_joints_publisher -DCMAKE_INSTALL_PREFIX=/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/irb360_fk_joints_publisher
+[0.042s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.042s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.042s]   CMake.
+[0.042s] 
+[0.043s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.043s]   to tell CMake that the project requires at least <min> but has been updated
+[0.043s]   to work with policies introduced by <max> or earlier.
+[0.043s] 
+[0.043s] [0m
+[0.100s] -- The C compiler identification is GNU 15.2.0
+[0.171s] -- The CXX compiler identification is GNU 15.2.0
+[0.178s] -- Detecting C compiler ABI info
+[0.230s] -- Detecting C compiler ABI info - done
+[0.245s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.245s] -- Detecting C compile features
+[0.245s] -- Detecting C compile features - done
+[0.255s] -- Detecting CXX compiler ABI info
+[0.311s] -- Detecting CXX compiler ABI info - done
+[0.325s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.325s] -- Detecting CXX compile features
+[0.326s] -- Detecting CXX compile features - done
+[0.335s] -- Found ament_cmake: 2.8.8 (/opt/ros/lyrical/share/ament_cmake/cmake)
+[0.689s] -- Found rclcpp: 32.0.3 (/opt/ros/lyrical/share/rclcpp/cmake)
+[0.742s] -- Found rosidl_generator_c: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_c/cmake)
+[0.756s] -- Found rosidl_generator_cpp: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_cpp/cmake)
+[0.779s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.795s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.845s] -- Found rmw_implementation_cmake: 7.10.2 (/opt/ros/lyrical/share/rmw_implementation_cmake/cmake)
+[0.848s] -- Found rmw_zenoh_cpp: 0.10.6 (/opt/ros/lyrical/share/rmw_zenoh_cpp/cmake)
+[0.848s] -- Using RMW implementation 'rmw_zenoh_cpp' as default
+[0.898s] -- Found sensor_msgs: 5.9.3 (/opt/ros/lyrical/share/sensor_msgs/cmake)
+[0.934s] [31mCMake Error at CMakeLists.txt:30 (ament_target_dependencies):
+[0.934s]   Unknown CMake command "ament_target_dependencies".
+[0.934s] 
+[0.934s] [0m
+[0.934s] -- Configuring incomplete, errors occurred!

@@ -1,0 +1,833 @@
+[-1789827414825631744.000s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[-1789827414825631744.000s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], lookup_in_workspace=False, cargo_args=None, clean_build=False, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7160d7c88b90>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7160d7cfa7b0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7160d7cfa7b0>>, mixin_verb=('build',))
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(cargo_workspace) check parameters
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[-1789827414825631744.000s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cargo_workspace']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cargo_workspace'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ament_cargo']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ament_cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cargo', 'cmake', 'python']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cargo_workspace']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cargo_workspace'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ament_cargo']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ament_cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cargo', 'cmake', 'python']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_egm_rws_managers) by extensions ['ignore', 'ignore_ament_install']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_egm_rws_managers) by extension 'ignore'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_egm_rws_managers) by extension 'ignore_ament_install'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_egm_rws_managers) by extensions ['cargo_workspace']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_egm_rws_managers) by extension 'cargo_workspace'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_egm_rws_managers) by extensions ['colcon_pkg']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_egm_rws_managers) by extension 'colcon_pkg'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_egm_rws_managers) by extensions ['colcon_meta']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_egm_rws_managers) by extension 'colcon_meta'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_egm_rws_managers) by extensions ['ament_cargo']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_egm_rws_managers) by extension 'ament_cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_egm_rws_managers) by extensions ['ros']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_egm_rws_managers) by extension 'ros'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/abb_egm_rws_managers' with type 'ros.cmake' and name 'abb_egm_rws_managers'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_libegm) by extensions ['ignore', 'ignore_ament_install']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_libegm) by extension 'ignore'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_libegm) by extension 'ignore_ament_install'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_libegm) by extensions ['cargo_workspace']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_libegm) by extension 'cargo_workspace'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_libegm) by extensions ['colcon_pkg']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_libegm) by extension 'colcon_pkg'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_libegm) by extensions ['colcon_meta']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_libegm) by extension 'colcon_meta'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_libegm) by extensions ['ament_cargo']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_libegm) by extension 'ament_cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_libegm) by extensions ['ros']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_libegm) by extension 'ros'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/abb_libegm' with type 'ros.cmake' and name 'abb_libegm'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_librws) by extensions ['ignore', 'ignore_ament_install']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_librws) by extension 'ignore'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_librws) by extension 'ignore_ament_install'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_librws) by extensions ['cargo_workspace']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_librws) by extension 'cargo_workspace'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_librws) by extensions ['colcon_pkg']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_librws) by extension 'colcon_pkg'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_librws) by extensions ['colcon_meta']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_librws) by extension 'colcon_meta'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_librws) by extensions ['ament_cargo']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_librws) by extension 'ament_cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_librws) by extensions ['ros']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_librws) by extension 'ros'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/abb_librws' with type 'ros.cmake' and name 'abb_librws'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2) by extensions ['ignore', 'ignore_ament_install']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2) by extension 'ignore'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2) by extension 'ignore_ament_install'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2) by extensions ['cargo_workspace']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2) by extension 'cargo_workspace'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2) by extensions ['colcon_pkg']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2) by extension 'colcon_pkg'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2) by extensions ['colcon_meta']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2) by extension 'colcon_meta'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2) by extensions ['ament_cargo']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2) by extension 'ament_cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2) by extensions ['ros']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2) by extension 'ros'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2) by extensions ['cargo', 'cmake', 'python']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2) by extension 'cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2) by extension 'cmake'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2) by extension 'python'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2) by extensions ['python_setup_py']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2) by extension 'python_setup_py'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_bringup) by extensions ['ignore', 'ignore_ament_install']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_bringup) by extension 'ignore'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_bringup) by extension 'ignore_ament_install'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_bringup) by extensions ['cargo_workspace']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_bringup) by extension 'cargo_workspace'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_bringup) by extensions ['colcon_pkg']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_bringup) by extension 'colcon_pkg'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_bringup) by extensions ['colcon_meta']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_bringup) by extension 'colcon_meta'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_bringup) by extensions ['ament_cargo']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_bringup) by extension 'ament_cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_bringup) by extensions ['ros']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_bringup) by extension 'ros'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/abb_ros2/abb_bringup' with type 'ros.ament_cmake' and name 'abb_bringup'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_hardware_interface) by extensions ['ignore', 'ignore_ament_install']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_hardware_interface) by extension 'ignore'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_hardware_interface) by extension 'ignore_ament_install'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_hardware_interface) by extensions ['cargo_workspace']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_hardware_interface) by extension 'cargo_workspace'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_hardware_interface) by extensions ['colcon_pkg']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_hardware_interface) by extension 'colcon_pkg'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_hardware_interface) by extensions ['colcon_meta']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_hardware_interface) by extension 'colcon_meta'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_hardware_interface) by extensions ['ament_cargo']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_hardware_interface) by extension 'ament_cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_hardware_interface) by extensions ['ros']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_hardware_interface) by extension 'ros'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/abb_ros2/abb_hardware_interface' with type 'ros.ament_cmake' and name 'abb_hardware_interface'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_resources) by extensions ['ignore', 'ignore_ament_install']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_resources) by extension 'ignore'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_resources) by extension 'ignore_ament_install'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_resources) by extensions ['cargo_workspace']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_resources) by extension 'cargo_workspace'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_resources) by extensions ['colcon_pkg']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_resources) by extension 'colcon_pkg'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_resources) by extensions ['colcon_meta']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_resources) by extension 'colcon_meta'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_resources) by extensions ['ament_cargo']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_resources) by extension 'ament_cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_resources) by extensions ['ros']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_resources) by extension 'ros'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/abb_ros2/abb_resources' with type 'ros.ament_cmake' and name 'abb_resources'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_ros2) by extensions ['ignore', 'ignore_ament_install']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_ros2) by extension 'ignore'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_ros2) by extension 'ignore_ament_install'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_ros2) by extensions ['cargo_workspace']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_ros2) by extension 'cargo_workspace'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_ros2) by extensions ['colcon_pkg']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_ros2) by extension 'colcon_pkg'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_ros2) by extensions ['colcon_meta']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_ros2) by extension 'colcon_meta'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_ros2) by extensions ['ament_cargo']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_ros2) by extension 'ament_cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_ros2) by extensions ['ros']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_ros2) by extension 'ros'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/abb_ros2/abb_ros2' with type 'ros.ament_cmake' and name 'abb_ros2'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_rws_client) by extensions ['ignore', 'ignore_ament_install']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_rws_client) by extension 'ignore'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_rws_client) by extension 'ignore_ament_install'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_rws_client) by extensions ['cargo_workspace']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_rws_client) by extension 'cargo_workspace'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_rws_client) by extensions ['colcon_pkg']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_rws_client) by extension 'colcon_pkg'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_rws_client) by extensions ['colcon_meta']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_rws_client) by extension 'colcon_meta'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_rws_client) by extensions ['ament_cargo']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_rws_client) by extension 'ament_cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_rws_client) by extensions ['ros']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_rws_client) by extension 'ros'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/abb_ros2/abb_rws_client' with type 'ros.ament_cmake' and name 'abb_rws_client'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs) by extensions ['ignore', 'ignore_ament_install']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs) by extension 'ignore'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs) by extension 'ignore_ament_install'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs) by extensions ['cargo_workspace']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs) by extension 'cargo_workspace'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs) by extensions ['colcon_pkg']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs) by extension 'colcon_pkg'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs) by extensions ['colcon_meta']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs) by extension 'colcon_meta'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs) by extensions ['ament_cargo']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs) by extension 'ament_cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs) by extensions ['ros']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs) by extension 'ros'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs) by extensions ['cargo', 'cmake', 'python']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs) by extension 'cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs) by extension 'cmake'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs) by extension 'python'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs) by extensions ['python_setup_py']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs) by extension 'python_setup_py'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs/images) by extensions ['ignore', 'ignore_ament_install']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs/images) by extension 'ignore'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs/images) by extension 'ignore_ament_install'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs/images) by extensions ['cargo_workspace']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs/images) by extension 'cargo_workspace'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs/images) by extensions ['colcon_pkg']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs/images) by extension 'colcon_pkg'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs/images) by extensions ['colcon_meta']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs/images) by extension 'colcon_meta'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs/images) by extensions ['ament_cargo']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs/images) by extension 'ament_cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs/images) by extensions ['ros']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs/images) by extension 'ros'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs/images) by extensions ['cargo', 'cmake', 'python']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs/images) by extension 'cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs/images) by extension 'cmake'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs/images) by extension 'python'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs/images) by extensions ['python_setup_py']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs/images) by extension 'python_setup_py'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config) by extensions ['ignore', 'ignore_ament_install']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config) by extension 'ignore'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config) by extension 'ignore_ament_install'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config) by extensions ['cargo_workspace']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config) by extension 'cargo_workspace'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config) by extensions ['colcon_pkg']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config) by extension 'colcon_pkg'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config) by extensions ['colcon_meta']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config) by extension 'colcon_meta'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config) by extensions ['ament_cargo']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config) by extension 'ament_cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config) by extensions ['ros']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config) by extension 'ros'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config) by extensions ['cargo', 'cmake', 'python']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config) by extension 'cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config) by extension 'cmake'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config) by extension 'python'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config) by extensions ['python_setup_py']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config) by extension 'python_setup_py'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb1200_5_90_moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb1200_5_90_moveit_config) by extension 'ignore'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb1200_5_90_moveit_config) by extension 'ignore_ament_install'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb1200_5_90_moveit_config) by extensions ['cargo_workspace']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb1200_5_90_moveit_config) by extension 'cargo_workspace'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb1200_5_90_moveit_config) by extensions ['colcon_pkg']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb1200_5_90_moveit_config) by extension 'colcon_pkg'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb1200_5_90_moveit_config) by extensions ['colcon_meta']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb1200_5_90_moveit_config) by extension 'colcon_meta'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb1200_5_90_moveit_config) by extensions ['ament_cargo']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb1200_5_90_moveit_config) by extension 'ament_cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb1200_5_90_moveit_config) by extensions ['ros']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb1200_5_90_moveit_config) by extension 'ros'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/abb_ros2/robot_specific_config/abb_irb1200_5_90_moveit_config' with type 'ros.ament_cmake' and name 'abb_irb1200_5_90_moveit_config'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb1200_support) by extensions ['ignore', 'ignore_ament_install']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb1200_support) by extension 'ignore'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb1200_support) by extension 'ignore_ament_install'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb1200_support) by extensions ['cargo_workspace']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb1200_support) by extension 'cargo_workspace'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb1200_support) by extensions ['colcon_pkg']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb1200_support) by extension 'colcon_pkg'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb1200_support) by extensions ['colcon_meta']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb1200_support) by extension 'colcon_meta'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb1200_support) by extensions ['ament_cargo']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb1200_support) by extension 'ament_cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb1200_support) by extensions ['ros']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb1200_support) by extension 'ros'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/abb_ros2/robot_specific_config/abb_irb1200_support' with type 'ros.ament_cmake' and name 'abb_irb1200_support'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb4600_support) by extensions ['ignore', 'ignore_ament_install']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb4600_support) by extension 'ignore'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb4600_support) by extension 'ignore_ament_install'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb4600_support) by extensions ['cargo_workspace']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb4600_support) by extension 'cargo_workspace'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb4600_support) by extensions ['colcon_pkg']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb4600_support) by extension 'colcon_pkg'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb4600_support) by extensions ['colcon_meta']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb4600_support) by extension 'colcon_meta'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb4600_support) by extensions ['ament_cargo']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb4600_support) by extension 'ament_cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb4600_support) by extensions ['ros']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config/abb_irb4600_support) by extension 'ros'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/abb_ros2/robot_specific_config/abb_irb4600_support' with type 'ros.ament_cmake' and name 'abb_irb4600_support'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources) by extensions ['ignore', 'ignore_ament_install']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources) by extension 'ignore'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources) by extension 'ignore_ament_install'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources) by extensions ['cargo_workspace']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources) by extension 'cargo_workspace'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources) by extensions ['colcon_pkg']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources) by extension 'colcon_pkg'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources) by extensions ['colcon_meta']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources) by extension 'colcon_meta'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources) by extensions ['ament_cargo']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources) by extension 'ament_cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources) by extensions ['ros']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources) by extension 'ros'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources) by extensions ['cargo', 'cmake', 'python']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources) by extension 'cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources) by extension 'cmake'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources) by extension 'python'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources) by extensions ['python_setup_py']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources) by extension 'python_setup_py'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources/velocity_control_example) by extensions ['ignore', 'ignore_ament_install']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources/velocity_control_example) by extension 'ignore'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources/velocity_control_example) by extension 'ignore_ament_install'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources/velocity_control_example) by extensions ['cargo_workspace']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources/velocity_control_example) by extension 'cargo_workspace'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources/velocity_control_example) by extensions ['colcon_pkg']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources/velocity_control_example) by extension 'colcon_pkg'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources/velocity_control_example) by extensions ['colcon_meta']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources/velocity_control_example) by extension 'colcon_meta'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources/velocity_control_example) by extensions ['ament_cargo']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources/velocity_control_example) by extension 'ament_cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources/velocity_control_example) by extensions ['ros']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources/velocity_control_example) by extension 'ros'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources/velocity_control_example) by extensions ['cargo', 'cmake', 'python']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources/velocity_control_example) by extension 'cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources/velocity_control_example) by extension 'cmake'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources/velocity_control_example) by extension 'python'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources/velocity_control_example) by extensions ['python_setup_py']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources/velocity_control_example) by extension 'python_setup_py'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs) by extensions ['ignore', 'ignore_ament_install']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs) by extension 'ignore'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs) by extension 'ignore_ament_install'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs) by extensions ['cargo_workspace']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs) by extension 'cargo_workspace'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs) by extensions ['colcon_pkg']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs) by extension 'colcon_pkg'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs) by extensions ['colcon_meta']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs) by extension 'colcon_meta'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs) by extensions ['ament_cargo']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs) by extension 'ament_cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs) by extensions ['ros']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs) by extension 'ros'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs) by extensions ['cargo', 'cmake', 'python']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs) by extension 'cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs) by extension 'cmake'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs) by extension 'python'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs) by extensions ['python_setup_py']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs) by extension 'python_setup_py'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_egm_msgs) by extensions ['ignore', 'ignore_ament_install']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_egm_msgs) by extension 'ignore'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_egm_msgs) by extension 'ignore_ament_install'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_egm_msgs) by extensions ['cargo_workspace']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_egm_msgs) by extension 'cargo_workspace'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_egm_msgs) by extensions ['colcon_pkg']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_egm_msgs) by extension 'colcon_pkg'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_egm_msgs) by extensions ['colcon_meta']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_egm_msgs) by extension 'colcon_meta'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_egm_msgs) by extensions ['ament_cargo']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_egm_msgs) by extension 'ament_cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_egm_msgs) by extensions ['ros']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_egm_msgs) by extension 'ros'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/abb_ros2_msgs/abb_egm_msgs' with type 'ros.ament_cmake' and name 'abb_egm_msgs'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_rapid_msgs) by extensions ['ignore', 'ignore_ament_install']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_rapid_msgs) by extension 'ignore'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_rapid_msgs) by extension 'ignore_ament_install'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_rapid_msgs) by extensions ['cargo_workspace']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_rapid_msgs) by extension 'cargo_workspace'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_rapid_msgs) by extensions ['colcon_pkg']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_rapid_msgs) by extension 'colcon_pkg'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_rapid_msgs) by extensions ['colcon_meta']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_rapid_msgs) by extension 'colcon_meta'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_rapid_msgs) by extensions ['ament_cargo']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_rapid_msgs) by extension 'ament_cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_rapid_msgs) by extensions ['ros']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_rapid_msgs) by extension 'ros'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/abb_ros2_msgs/abb_rapid_msgs' with type 'ros.ament_cmake' and name 'abb_rapid_msgs'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_rapid_sm_addin_msgs) by extensions ['ignore', 'ignore_ament_install']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_rapid_sm_addin_msgs) by extension 'ignore'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_rapid_sm_addin_msgs) by extension 'ignore_ament_install'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_rapid_sm_addin_msgs) by extensions ['cargo_workspace']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_rapid_sm_addin_msgs) by extension 'cargo_workspace'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_rapid_sm_addin_msgs) by extensions ['colcon_pkg']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_rapid_sm_addin_msgs) by extension 'colcon_pkg'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_rapid_sm_addin_msgs) by extensions ['colcon_meta']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_rapid_sm_addin_msgs) by extension 'colcon_meta'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_rapid_sm_addin_msgs) by extensions ['ament_cargo']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_rapid_sm_addin_msgs) by extension 'ament_cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_rapid_sm_addin_msgs) by extensions ['ros']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_rapid_sm_addin_msgs) by extension 'ros'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/abb_ros2_msgs/abb_rapid_sm_addin_msgs' with type 'ros.ament_cmake' and name 'abb_rapid_sm_addin_msgs'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_robot_msgs) by extensions ['ignore', 'ignore_ament_install']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_robot_msgs) by extension 'ignore'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_robot_msgs) by extension 'ignore_ament_install'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_robot_msgs) by extensions ['cargo_workspace']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_robot_msgs) by extension 'cargo_workspace'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_robot_msgs) by extensions ['colcon_pkg']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_robot_msgs) by extension 'colcon_pkg'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_robot_msgs) by extensions ['colcon_meta']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_robot_msgs) by extension 'colcon_meta'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_robot_msgs) by extensions ['ament_cargo']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_robot_msgs) by extension 'ament_cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_robot_msgs) by extensions ['ros']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2_msgs/abb_robot_msgs) by extension 'ros'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/abb_ros2_msgs/abb_robot_msgs' with type 'ros.ament_cmake' and name 'abb_robot_msgs'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/collision) by extensions ['ignore', 'ignore_ament_install']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/collision) by extension 'ignore'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/collision) by extension 'ignore_ament_install'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/collision) by extensions ['cargo_workspace']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/collision) by extension 'cargo_workspace'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/collision) by extensions ['colcon_pkg']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/collision) by extension 'colcon_pkg'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/collision) by extensions ['colcon_meta']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/collision) by extension 'colcon_meta'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/collision) by extensions ['ament_cargo']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/collision) by extension 'ament_cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/collision) by extensions ['ros']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/collision) by extension 'ros'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/collision' with type 'ros.ament_cmake' and name 'collision'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360) by extensions ['ignore', 'ignore_ament_install']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360) by extension 'ignore'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360) by extension 'ignore_ament_install'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360) by extensions ['cargo_workspace']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360) by extension 'cargo_workspace'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360) by extensions ['colcon_pkg']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360) by extension 'colcon_pkg'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360) by extensions ['colcon_meta']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360) by extension 'colcon_meta'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360) by extensions ['ament_cargo']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360) by extension 'ament_cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360) by extensions ['ros']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360) by extension 'ros'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/irb360' with type 'ros.ament_python' and name 'irb360'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360_fk_joints_publisher) by extensions ['ignore', 'ignore_ament_install']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360_fk_joints_publisher) by extension 'ignore'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360_fk_joints_publisher) by extension 'ignore_ament_install'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360_fk_joints_publisher) by extensions ['cargo_workspace']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360_fk_joints_publisher) by extension 'cargo_workspace'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360_fk_joints_publisher) by extensions ['colcon_pkg']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360_fk_joints_publisher) by extension 'colcon_pkg'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360_fk_joints_publisher) by extensions ['colcon_meta']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360_fk_joints_publisher) by extension 'colcon_meta'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360_fk_joints_publisher) by extensions ['ament_cargo']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360_fk_joints_publisher) by extension 'ament_cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360_fk_joints_publisher) by extensions ['ros']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360_fk_joints_publisher) by extension 'ros'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/irb360_fk_joints_publisher' with type 'ros.ament_cmake' and name 'irb360_fk_joints_publisher'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360_moveit) by extensions ['ignore', 'ignore_ament_install']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360_moveit) by extension 'ignore'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360_moveit) by extension 'ignore_ament_install'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360_moveit) by extensions ['cargo_workspace']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360_moveit) by extension 'cargo_workspace'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360_moveit) by extensions ['colcon_pkg']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360_moveit) by extension 'colcon_pkg'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360_moveit) by extensions ['colcon_meta']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360_moveit) by extension 'colcon_meta'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360_moveit) by extensions ['ament_cargo']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360_moveit) by extension 'ament_cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360_moveit) by extensions ['ros']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/irb360_moveit) by extension 'ros'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/irb360_moveit' with type 'ros.ament_cmake' and name 'irb360_moveit'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_irb360_kinematics) by extensions ['ignore', 'ignore_ament_install']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_irb360_kinematics) by extension 'ignore'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_irb360_kinematics) by extension 'ignore_ament_install'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_irb360_kinematics) by extensions ['cargo_workspace']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_irb360_kinematics) by extension 'cargo_workspace'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_irb360_kinematics) by extensions ['colcon_pkg']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_irb360_kinematics) by extension 'colcon_pkg'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_irb360_kinematics) by extensions ['colcon_meta']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_irb360_kinematics) by extension 'colcon_meta'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_irb360_kinematics) by extensions ['ament_cargo']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_irb360_kinematics) by extension 'ament_cargo'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_irb360_kinematics) by extensions ['ros']
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_irb360_kinematics) by extension 'ros'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/moveit_irb360_kinematics' with type 'ros.ament_cmake' and name 'moveit_irb360_kinematics'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(cargo_workspace) discover
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(cargo_workspace) using defaults
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[-1789827414825631744.000s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 452 installed packages in /opt/ros/lyrical
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_egm_msgs' build argument 'lookup_in_workspace' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_egm_msgs' build argument 'cargo_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_egm_msgs' build argument 'clean_build' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_egm_msgs' build argument 'cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_egm_msgs' build argument 'cmake_target' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_egm_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_egm_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_egm_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_egm_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_egm_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_egm_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_egm_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.verb:Building package 'abb_egm_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_egm_msgs', 'cargo_args': None, 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'clean_build': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_egm_msgs', 'lookup_in_workspace': False, 'merge_install': False, 'path': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2_msgs/abb_egm_msgs', 'symlink_install': False, 'test_result_base': None}
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb1200_support' build argument 'lookup_in_workspace' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb1200_support' build argument 'cargo_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb1200_support' build argument 'clean_build' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb1200_support' build argument 'cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb1200_support' build argument 'cmake_target' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb1200_support' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb1200_support' build argument 'cmake_clean_cache' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb1200_support' build argument 'cmake_clean_first' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb1200_support' build argument 'cmake_force_configure' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb1200_support' build argument 'ament_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb1200_support' build argument 'catkin_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb1200_support' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.verb:Building package 'abb_irb1200_support' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_irb1200_support', 'cargo_args': None, 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'clean_build': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_irb1200_support', 'lookup_in_workspace': False, 'merge_install': False, 'path': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2/robot_specific_config/abb_irb1200_support', 'symlink_install': False, 'test_result_base': None}
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb4600_support' build argument 'lookup_in_workspace' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb4600_support' build argument 'cargo_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb4600_support' build argument 'clean_build' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb4600_support' build argument 'cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb4600_support' build argument 'cmake_target' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb4600_support' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb4600_support' build argument 'cmake_clean_cache' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb4600_support' build argument 'cmake_clean_first' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb4600_support' build argument 'cmake_force_configure' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb4600_support' build argument 'ament_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb4600_support' build argument 'catkin_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb4600_support' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.verb:Building package 'abb_irb4600_support' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_irb4600_support', 'cargo_args': None, 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'clean_build': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_irb4600_support', 'lookup_in_workspace': False, 'merge_install': False, 'path': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2/robot_specific_config/abb_irb4600_support', 'symlink_install': False, 'test_result_base': None}
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_libegm' build argument 'lookup_in_workspace' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_libegm' build argument 'cargo_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_libegm' build argument 'clean_build' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_libegm' build argument 'cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_libegm' build argument 'cmake_target' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_libegm' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_libegm' build argument 'cmake_clean_cache' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_libegm' build argument 'cmake_clean_first' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_libegm' build argument 'cmake_force_configure' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_libegm' build argument 'ament_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_libegm' build argument 'catkin_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_libegm' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.verb:Building package 'abb_libegm' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_libegm', 'cargo_args': None, 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'clean_build': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_libegm', 'lookup_in_workspace': False, 'merge_install': False, 'path': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_libegm', 'symlink_install': False, 'test_result_base': None}
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_librws' build argument 'lookup_in_workspace' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_librws' build argument 'cargo_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_librws' build argument 'clean_build' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_librws' build argument 'cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_librws' build argument 'cmake_target' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_librws' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_librws' build argument 'cmake_clean_cache' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_librws' build argument 'cmake_clean_first' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_librws' build argument 'cmake_force_configure' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_librws' build argument 'ament_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_librws' build argument 'catkin_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_librws' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.verb:Building package 'abb_librws' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_librws', 'cargo_args': None, 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'clean_build': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_librws', 'lookup_in_workspace': False, 'merge_install': False, 'path': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_librws', 'symlink_install': False, 'test_result_base': None}
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rapid_msgs' build argument 'lookup_in_workspace' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rapid_msgs' build argument 'cargo_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rapid_msgs' build argument 'clean_build' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rapid_msgs' build argument 'cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rapid_msgs' build argument 'cmake_target' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rapid_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rapid_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rapid_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rapid_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rapid_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rapid_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rapid_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.verb:Building package 'abb_rapid_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_rapid_msgs', 'cargo_args': None, 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'clean_build': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_rapid_msgs', 'lookup_in_workspace': False, 'merge_install': False, 'path': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2_msgs/abb_rapid_msgs', 'symlink_install': False, 'test_result_base': None}
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_resources' build argument 'lookup_in_workspace' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_resources' build argument 'cargo_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_resources' build argument 'clean_build' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_resources' build argument 'cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_resources' build argument 'cmake_target' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_resources' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_resources' build argument 'cmake_clean_cache' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_resources' build argument 'cmake_clean_first' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_resources' build argument 'cmake_force_configure' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_resources' build argument 'ament_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_resources' build argument 'catkin_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_resources' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.verb:Building package 'abb_resources' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_resources', 'cargo_args': None, 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'clean_build': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_resources', 'lookup_in_workspace': False, 'merge_install': False, 'path': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2/abb_resources', 'symlink_install': False, 'test_result_base': None}
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_robot_msgs' build argument 'lookup_in_workspace' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_robot_msgs' build argument 'cargo_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_robot_msgs' build argument 'clean_build' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_robot_msgs' build argument 'cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_robot_msgs' build argument 'cmake_target' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_robot_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_robot_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_robot_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_robot_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_robot_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_robot_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_robot_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.verb:Building package 'abb_robot_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_robot_msgs', 'cargo_args': None, 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'clean_build': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_robot_msgs', 'lookup_in_workspace': False, 'merge_install': False, 'path': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2_msgs/abb_robot_msgs', 'symlink_install': False, 'test_result_base': None}
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_ros2' build argument 'lookup_in_workspace' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_ros2' build argument 'cargo_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_ros2' build argument 'clean_build' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_ros2' build argument 'cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_ros2' build argument 'cmake_target' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.verb:Building package 'abb_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_ros2', 'cargo_args': None, 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'clean_build': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_ros2', 'lookup_in_workspace': False, 'merge_install': False, 'path': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2/abb_ros2', 'symlink_install': False, 'test_result_base': None}
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'collision' build argument 'lookup_in_workspace' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'collision' build argument 'cargo_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'collision' build argument 'clean_build' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'collision' build argument 'cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'collision' build argument 'cmake_target' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'collision' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'collision' build argument 'cmake_clean_cache' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'collision' build argument 'cmake_clean_first' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'collision' build argument 'cmake_force_configure' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'collision' build argument 'ament_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'collision' build argument 'catkin_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'collision' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.verb:Building package 'collision' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/collision', 'cargo_args': None, 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'clean_build': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/collision', 'lookup_in_workspace': False, 'merge_install': False, 'path': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/collision', 'symlink_install': False, 'test_result_base': None}
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360_fk_joints_publisher' build argument 'lookup_in_workspace' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360_fk_joints_publisher' build argument 'cargo_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360_fk_joints_publisher' build argument 'clean_build' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360_fk_joints_publisher' build argument 'cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360_fk_joints_publisher' build argument 'cmake_target' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360_fk_joints_publisher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360_fk_joints_publisher' build argument 'cmake_clean_cache' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360_fk_joints_publisher' build argument 'cmake_clean_first' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360_fk_joints_publisher' build argument 'cmake_force_configure' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360_fk_joints_publisher' build argument 'ament_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360_fk_joints_publisher' build argument 'catkin_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360_fk_joints_publisher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.verb:Building package 'irb360_fk_joints_publisher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/irb360_fk_joints_publisher', 'cargo_args': None, 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'clean_build': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/irb360_fk_joints_publisher', 'lookup_in_workspace': False, 'merge_install': False, 'path': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/irb360_fk_joints_publisher', 'symlink_install': False, 'test_result_base': None}
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'moveit_irb360_kinematics' build argument 'lookup_in_workspace' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'moveit_irb360_kinematics' build argument 'cargo_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'moveit_irb360_kinematics' build argument 'clean_build' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'moveit_irb360_kinematics' build argument 'cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'moveit_irb360_kinematics' build argument 'cmake_target' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'moveit_irb360_kinematics' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'moveit_irb360_kinematics' build argument 'cmake_clean_cache' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'moveit_irb360_kinematics' build argument 'cmake_clean_first' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'moveit_irb360_kinematics' build argument 'cmake_force_configure' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'moveit_irb360_kinematics' build argument 'ament_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'moveit_irb360_kinematics' build argument 'catkin_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'moveit_irb360_kinematics' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.verb:Building package 'moveit_irb360_kinematics' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/moveit_irb360_kinematics', 'cargo_args': None, 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'clean_build': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/moveit_irb360_kinematics', 'lookup_in_workspace': False, 'merge_install': False, 'path': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/moveit_irb360_kinematics', 'symlink_install': False, 'test_result_base': None}
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_egm_rws_managers' build argument 'lookup_in_workspace' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_egm_rws_managers' build argument 'cargo_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_egm_rws_managers' build argument 'clean_build' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_egm_rws_managers' build argument 'cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_egm_rws_managers' build argument 'cmake_target' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_egm_rws_managers' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_egm_rws_managers' build argument 'cmake_clean_cache' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_egm_rws_managers' build argument 'cmake_clean_first' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_egm_rws_managers' build argument 'cmake_force_configure' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_egm_rws_managers' build argument 'ament_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_egm_rws_managers' build argument 'catkin_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_egm_rws_managers' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.verb:Building package 'abb_egm_rws_managers' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_egm_rws_managers', 'cargo_args': None, 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'clean_build': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_egm_rws_managers', 'lookup_in_workspace': False, 'merge_install': False, 'path': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_egm_rws_managers', 'symlink_install': False, 'test_result_base': None}
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb1200_5_90_moveit_config' build argument 'lookup_in_workspace' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb1200_5_90_moveit_config' build argument 'cargo_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb1200_5_90_moveit_config' build argument 'clean_build' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb1200_5_90_moveit_config' build argument 'cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb1200_5_90_moveit_config' build argument 'cmake_target' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb1200_5_90_moveit_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb1200_5_90_moveit_config' build argument 'cmake_clean_cache' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb1200_5_90_moveit_config' build argument 'cmake_clean_first' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb1200_5_90_moveit_config' build argument 'cmake_force_configure' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb1200_5_90_moveit_config' build argument 'ament_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb1200_5_90_moveit_config' build argument 'catkin_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_irb1200_5_90_moveit_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.verb:Building package 'abb_irb1200_5_90_moveit_config' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_irb1200_5_90_moveit_config', 'cargo_args': None, 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'clean_build': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_irb1200_5_90_moveit_config', 'lookup_in_workspace': False, 'merge_install': False, 'path': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2/robot_specific_config/abb_irb1200_5_90_moveit_config', 'symlink_install': False, 'test_result_base': None}
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rapid_sm_addin_msgs' build argument 'lookup_in_workspace' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rapid_sm_addin_msgs' build argument 'cargo_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rapid_sm_addin_msgs' build argument 'clean_build' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rapid_sm_addin_msgs' build argument 'cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rapid_sm_addin_msgs' build argument 'cmake_target' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rapid_sm_addin_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rapid_sm_addin_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rapid_sm_addin_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rapid_sm_addin_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rapid_sm_addin_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rapid_sm_addin_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rapid_sm_addin_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.verb:Building package 'abb_rapid_sm_addin_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_rapid_sm_addin_msgs', 'cargo_args': None, 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'clean_build': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_rapid_sm_addin_msgs', 'lookup_in_workspace': False, 'merge_install': False, 'path': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2_msgs/abb_rapid_sm_addin_msgs', 'symlink_install': False, 'test_result_base': None}
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360' build argument 'lookup_in_workspace' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360' build argument 'cargo_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360' build argument 'clean_build' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360' build argument 'cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360' build argument 'cmake_target' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360' build argument 'cmake_clean_cache' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360' build argument 'cmake_clean_first' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360' build argument 'cmake_force_configure' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360' build argument 'ament_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360' build argument 'catkin_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.verb:Building package 'irb360' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/irb360', 'cargo_args': None, 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'clean_build': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/irb360', 'lookup_in_workspace': False, 'merge_install': False, 'path': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/irb360', 'symlink_install': False, 'test_result_base': None}
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_bringup' build argument 'lookup_in_workspace' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_bringup' build argument 'cargo_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_bringup' build argument 'clean_build' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_bringup' build argument 'cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_bringup' build argument 'cmake_target' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.verb:Building package 'abb_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_bringup', 'cargo_args': None, 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'clean_build': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_bringup', 'lookup_in_workspace': False, 'merge_install': False, 'path': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2/abb_bringup', 'symlink_install': False, 'test_result_base': None}
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_hardware_interface' build argument 'lookup_in_workspace' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_hardware_interface' build argument 'cargo_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_hardware_interface' build argument 'clean_build' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_hardware_interface' build argument 'cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_hardware_interface' build argument 'cmake_target' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_hardware_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_hardware_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_hardware_interface' build argument 'cmake_clean_first' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_hardware_interface' build argument 'cmake_force_configure' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_hardware_interface' build argument 'ament_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_hardware_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_hardware_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.verb:Building package 'abb_hardware_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_hardware_interface', 'cargo_args': None, 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'clean_build': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_hardware_interface', 'lookup_in_workspace': False, 'merge_install': False, 'path': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2/abb_hardware_interface', 'symlink_install': False, 'test_result_base': None}
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360_moveit' build argument 'lookup_in_workspace' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360_moveit' build argument 'cargo_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360_moveit' build argument 'clean_build' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360_moveit' build argument 'cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360_moveit' build argument 'cmake_target' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360_moveit' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360_moveit' build argument 'cmake_clean_cache' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360_moveit' build argument 'cmake_clean_first' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360_moveit' build argument 'cmake_force_configure' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360_moveit' build argument 'ament_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360_moveit' build argument 'catkin_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'irb360_moveit' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.verb:Building package 'irb360_moveit' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/irb360_moveit', 'cargo_args': None, 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'clean_build': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/irb360_moveit', 'lookup_in_workspace': False, 'merge_install': False, 'path': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/irb360_moveit', 'symlink_install': False, 'test_result_base': None}
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rws_client' build argument 'lookup_in_workspace' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rws_client' build argument 'cargo_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rws_client' build argument 'clean_build' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rws_client' build argument 'cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rws_client' build argument 'cmake_target' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rws_client' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rws_client' build argument 'cmake_clean_cache' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rws_client' build argument 'cmake_clean_first' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rws_client' build argument 'cmake_force_configure' from command line to 'False'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rws_client' build argument 'ament_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rws_client' build argument 'catkin_cmake_args' from command line to 'None'
+[-1789827414825631744.000s] Level 5:colcon.colcon_core.verb:set package 'abb_rws_client' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.verb:Building package 'abb_rws_client' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_rws_client', 'cargo_args': None, 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'clean_build': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_rws_client', 'lookup_in_workspace': False, 'merge_install': False, 'path': '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2/abb_rws_client', 'symlink_install': False, 'test_result_base': None}
+[-1789827414825631744.000s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[-1789827414825631744.000s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[-1789827414825631744.000s] INFO:colcon.colcon_ros.task.cmake.build:Building ROS package in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_libegm' with build type 'cmake'
+[-1789827414825631744.000s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_libegm'
+[-1789827414825631744.000s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[-1789827414825631744.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1789827414825631744.000s] INFO:colcon.colcon_ros.task.cmake.build:Building ROS package in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_librws' with build type 'cmake'
+[-1789827414825631744.000s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_librws'
+[-1789827414825631744.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1789827414825631744.000s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2/robot_specific_config/abb_irb1200_support' with build type 'ament_cmake'
+[-1789827414825631744.000s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2/robot_specific_config/abb_irb1200_support'
+[-1789827414825631744.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1789827414825631744.000s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2_msgs/abb_rapid_msgs' with build type 'ament_cmake'
+[-1789827414825631744.000s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2_msgs/abb_rapid_msgs'
+[-1789827414825631744.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1789827414825631744.000s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/irb360_fk_joints_publisher' with build type 'ament_cmake'
+[-1789827414825631744.000s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/irb360_fk_joints_publisher'
+[-1789827414825631744.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1789827414825631744.000s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2_msgs/abb_egm_msgs' with build type 'ament_cmake'
+[-1789827414825631744.000s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2_msgs/abb_egm_msgs'
+[-1789827414825631744.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1789827414825631744.000s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2/abb_resources' with build type 'ament_cmake'
+[-1789827414825631744.000s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2/abb_resources'
+[-1789827414825631744.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1789827414825631744.000s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2_msgs/abb_robot_msgs' with build type 'ament_cmake'
+[-1789827414825631744.000s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2_msgs/abb_robot_msgs'
+[-1789827414825631744.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1789827414825631744.000s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2/robot_specific_config/abb_irb4600_support' with build type 'ament_cmake'
+[-1789827414825631744.000s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2/robot_specific_config/abb_irb4600_support'
+[-1789827414825631744.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1789827414825631744.000s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2/abb_ros2' with build type 'ament_cmake'
+[-1789827414825631744.000s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2/abb_ros2'
+[-1789827414825631744.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1789827414825631744.000s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/collision' with build type 'ament_cmake'
+[-1789827414825631744.000s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/collision'
+[-1789827414825631744.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1789827414825631744.000s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/moveit_irb360_kinematics' with build type 'ament_cmake'
+[-1789827414825631744.000s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/moveit_irb360_kinematics'
+[-1789827414825631744.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_libegm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_libegm -DCMAKE_INSTALL_PREFIX=/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_libegm
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_librws': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_librws -DCMAKE_INSTALL_PREFIX=/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_librws
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_irb1200_support': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2/robot_specific_config/abb_irb1200_support -DCMAKE_INSTALL_PREFIX=/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_irb1200_support
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_rapid_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2_msgs/abb_rapid_msgs -DCMAKE_INSTALL_PREFIX=/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_rapid_msgs
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/irb360_fk_joints_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/irb360_fk_joints_publisher -DCMAKE_INSTALL_PREFIX=/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/irb360_fk_joints_publisher
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_egm_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2_msgs/abb_egm_msgs -DCMAKE_INSTALL_PREFIX=/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_egm_msgs
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_resources': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2/abb_resources -DCMAKE_INSTALL_PREFIX=/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_resources
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_robot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2_msgs/abb_robot_msgs -DCMAKE_INSTALL_PREFIX=/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_robot_msgs
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_irb4600_support': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2/robot_specific_config/abb_irb4600_support -DCMAKE_INSTALL_PREFIX=/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_irb4600_support
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_ros2/abb_ros2 -DCMAKE_INSTALL_PREFIX=/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_ros2
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/collision': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/collision -DCMAKE_INSTALL_PREFIX=/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/collision
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/moveit_irb360_kinematics': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/moveit_irb360_kinematics -DCMAKE_INSTALL_PREFIX=/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/moveit_irb360_kinematics
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_libegm' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/abb_libegm -DCMAKE_INSTALL_PREFIX=/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_libegm
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(abb_libegm)
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.environment:checking '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_libegm' for CMake module files
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.environment:checking '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_libegm' for CMake config files
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.environment:checking '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_libegm/bin'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.environment:checking '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_libegm/lib/pkgconfig/abb_libegm.pc'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.environment:checking '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_libegm/lib/python3.14/site-packages'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.environment:checking '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_libegm/bin'
+[-1789827414825631744.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_libegm/share/abb_libegm/package.ps1'
+[-1789827414825631744.000s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_libegm/share/abb_libegm/package.dsv'
+[-1789827414825631744.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_libegm/share/abb_libegm/package.sh'
+[-1789827414825631744.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_libegm/share/abb_libegm/package.bash'
+[-1789827414825631744.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_libegm/share/abb_libegm/package.zsh'
+[-1789827414825631744.000s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/abb_libegm/share/colcon-core/packages/abb_libegm)
+[-1789827414825631744.000s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[-1789827414825631744.000s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[-1789827414825631744.000s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[-1789827414825631744.000s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[-1789827414825631744.000s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/local_setup.ps1'
+[-1789827414825631744.000s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/_local_setup_util_ps1.py'
+[-1789827414825631744.000s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/setup.ps1'
+[-1789827414825631744.000s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/local_setup.sh'
+[-1789827414825631744.000s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/_local_setup_util_sh.py'
+[-1789827414825631744.000s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/setup.sh'
+[-1789827414825631744.000s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/local_setup.bash'
+[-1789827414825631744.000s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/setup.bash'
+[-1789827414825631744.000s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/local_setup.zsh'
+[-1789827414825631744.000s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/setup.zsh'

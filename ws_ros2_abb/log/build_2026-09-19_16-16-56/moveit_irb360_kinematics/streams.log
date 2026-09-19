@@ -1,0 +1,53 @@
+[0.023s] Invoking command in '/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/moveit_irb360_kinematics': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/src/moveit_irb360_kinematics -DCMAKE_INSTALL_PREFIX=/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/install/moveit_irb360_kinematics
+[0.125s] -- The CXX compiler identification is GNU 15.2.0
+[0.133s] -- Detecting CXX compiler ABI info
+[0.183s] -- Detecting CXX compiler ABI info - done
+[0.197s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.197s] -- Detecting CXX compile features
+[0.198s] -- Detecting CXX compile features - done
+[0.207s] -- Found moveit_common: 2.15.2 (/opt/ros/lyrical/share/moveit_common/cmake)
+[0.209s] -- Found ament_cmake: 2.8.8 (/opt/ros/lyrical/share/ament_cmake/cmake)
+[0.581s] [0mmoveit_irb360_kinematics: You did not request a specific build type: Choosing 'Release' for maximum performance[0m
+[0.591s] -- Found moveit_core: 2.15.2 (/opt/ros/lyrical/share/moveit_core/cmake)
+[0.637s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.726s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.727s] -- Found Threads: TRUE
+[0.800s] -- Found rclcpp: 32.0.3 (/opt/ros/lyrical/share/rclcpp/cmake)
+[0.832s] -- Found rosidl_generator_c: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_c/cmake)
+[0.840s] -- Found rosidl_generator_cpp: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_cpp/cmake)
+[0.853s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.864s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.915s] -- Found rmw_implementation_cmake: 7.10.2 (/opt/ros/lyrical/share/rmw_implementation_cmake/cmake)
+[0.918s] -- Found rmw_zenoh_cpp: 0.10.6 (/opt/ros/lyrical/share/rmw_zenoh_cpp/cmake)
+[0.918s] -- Using RMW implementation 'rmw_zenoh_cpp' as default
+[0.972s] -- Found tcb_span: 2.0.3 (/opt/ros/lyrical/share/tcb_span/cmake)
+[0.983s] -- Found rclcpp_lifecycle: 32.0.3 (/opt/ros/lyrical/share/rclcpp_lifecycle/cmake)
+[1.407s] -- Found moveit_ros_planning: 2.15.2 (/opt/ros/lyrical/share/moveit_ros_planning/cmake)
+[1.431s] [33mCMake Warning (dev) at ConfigExtras.cmake:3 (find_package):
+[1.432s]   Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+[1.432s]   --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+[1.432s]   set the policy and suppress this warning.
+[1.432s] 
+[1.432s] Call Stack (most recent call first):
+[1.432s]   CMakeLists.txt:19 (include)
+[1.432s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.432s] [0m
+[1.441s] [31mCMake Error at /usr/lib/x86_64-linux-gnu/cmake/Boost-1.90.0/BoostConfig.cmake:141 (find_package):
+[1.441s]   Could not find a package configuration file provided by "boost_system"
+[1.441s]   (requested version 1.90.0) with any of the following names:
+[1.441s] 
+[1.441s]     boost_systemConfig.cmake
+[1.441s]     boost_system-config.cmake
+[1.441s] 
+[1.441s]   Add the installation prefix of "boost_system" to CMAKE_PREFIX_PATH or set
+[1.441s]   "boost_system_DIR" to a directory containing one of the above files.  If
+[1.441s]   "boost_system" provides a separate development package or SDK, be sure it
+[1.441s]   has been installed.
+[1.441s] Call Stack (most recent call first):
+[1.441s]   /usr/lib/x86_64-linux-gnu/cmake/Boost-1.90.0/BoostConfig.cmake:262 (boost_find_component)
+[1.442s]   /usr/share/cmake-4.2/Modules/FindBoost.cmake:610 (find_package)
+[1.442s]   ConfigExtras.cmake:3 (find_package)
+[1.442s]   CMakeLists.txt:19 (include)
+[1.442s] 
+[1.442s] [0m
+[1.442s] -- Configuring incomplete, errors occurred!

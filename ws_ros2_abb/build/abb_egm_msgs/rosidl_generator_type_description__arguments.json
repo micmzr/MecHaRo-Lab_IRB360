@@ -1,0 +1,12 @@
+{
+  "package_name": "abb_egm_msgs",
+  "output_dir": "/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_egm_msgs/rosidl_generator_type_description/abb_egm_msgs",
+  "idl_tuples": [
+    "/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_egm_msgs/rosidl_adapter/abb_egm_msgs:msg/EGMChannelState.idl",
+    "/home/mmazur/Prace/MecHaRo-Lab_IRB360/ws_ros2_abb/build/abb_egm_msgs/rosidl_adapter/abb_egm_msgs:msg/EGMState.idl"
+  ],
+  "include_paths": [
+    "std_msgs:/opt/ros/lyrical/share/std_msgs/",
+    "builtin_interfaces:/opt/ros/lyrical/share/builtin_interfaces/"
+  ]
+}
