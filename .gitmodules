@@ -9,7 +9,7 @@
 	url = https://github.com/micmzr/abb_libegm.git
 [submodule "ws_ros2_abb/src/abb_librws"]
 	path = ws_ros2_abb/src/abb_librws
-	url = https://github.com/ros-industrial/abb_librws.git
+	url = https://github.com/micmzr/abb_librws.git
 [submodule "ws_ros2_abb/src/abb_ros2_msgs"]
 	path = ws_ros2_abb/src/abb_ros2_msgs
 	url = https://github.com/gbartyzel/abb_ros2_msgs.git

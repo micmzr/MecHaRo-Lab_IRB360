@@ -1,9 +1,9 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.30)
 project(irb360_fk_joints_publisher)
 
 # Default to C++14
 if(NOT CMAKE_CXX_STANDARD)
-  set(CMAKE_CXX_STANDARD 14)
+  set(CMAKE_CXX_STANDARD 20)
 endif()
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
@@ -27,7 +27,12 @@ set(THIS_PACKAGE_INCLUDE_DEPENDS
   )
 
 add_executable(irb360_fk_joints_publisher src/irb360_fk_joints_publisher.cpp)
-ament_target_dependencies(irb360_fk_joints_publisher ${THIS_PACKAGE_INCLUDE_DEPENDS})
+target_link_libraries(
+  irb360_fk_joints_publisher
+  PUBLIC
+  rclcpp::rclcpp
+  sensor_msgs::sensor_msgs
+)
 
 install(TARGETS irb360_fk_joints_publisher
   DESTINATION lib/${PROJECT_NAME}

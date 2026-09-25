@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 3.18)
 project(moveit_irb360_kinematics LANGUAGES CXX)
 
+if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
+  set(CMAKE_BUILD_TYPE "Release" CACHE STRING "Choose the type of build." FORCE)
+endif()
+
 # Common cmake code applied to all moveit packages
 find_package(moveit_common REQUIRED)
 moveit_package()
@@ -14,9 +18,6 @@ find_package(moveit_ros_planning REQUIRED)
 find_package(pluginlib REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(tf2_kdl REQUIRED)
-
-# Finds Boost Components
-include(ConfigExtras.cmake)
 
 set(THIS_PACKAGE_INCLUDE_DIRS
   irb360_kinematics_plugin/include
@@ -53,4 +54,4 @@ install(
 ament_export_targets(${PROJECT_NAME}Targets HAS_LIBRARY_TARGET)
 ament_export_dependencies(${THIS_PACKAGE_INCLUDE_DEPENDS})
 
-ament_package(CONFIG_EXTRAS ConfigExtras.cmake)
+ament_package()

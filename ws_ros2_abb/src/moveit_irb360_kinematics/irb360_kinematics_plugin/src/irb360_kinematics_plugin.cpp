@@ -1,17 +1,17 @@
-#include <moveit/macros/class_forward.h>
+#include <moveit/macros/class_forward.hpp>
 
 #include <moveit_msgs/srv/get_position_fk.hpp>
 #include <moveit_msgs/srv/get_position_ik.hpp>
 #include <moveit/irb360_kinematics_plugin/irb360_kinematics_plugin.h>
 #include <class_loader/class_loader.hpp>
-#include <moveit/robot_state/conversions.h>
+#include <moveit/robot_state/conversions.hpp>
 #include <iterator>
 
 // Eigen
 #include <Eigen/Core>
 #include <Eigen/Geometry>
 
-#include <tf2/LinearMath/Matrix3x3.h>
+#include <tf2/LinearMath/Matrix3x3.hpp>
 
 
 // bug in:

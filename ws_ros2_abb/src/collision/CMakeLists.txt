@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.30)
 project(collision)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
@@ -15,12 +15,13 @@ add_executable(collision src/collision.cpp)
 target_include_directories(collision PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)
-target_compile_features(collision PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
-ament_target_dependencies(
-  collision
-  "moveit_ros_planning_interface"
-  "moveit_visual_tools"
-  "rclcpp"
+target_compile_features(collision PUBLIC c_std_99 cxx_std_20)  # Require C99 and C++20
+target_link_libraries(
+  collision 
+  PUBLIC
+  moveit_ros_planning_interface::moveit_ros_planning_interface
+  moveit_visual_tools::moveit_visual_tools
+  rclcpp::rclcpp
 )
 
 install(TARGETS collision
