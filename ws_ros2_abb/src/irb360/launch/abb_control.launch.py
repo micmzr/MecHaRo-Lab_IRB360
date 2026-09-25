@@ -193,12 +193,14 @@ def generate_launch_description():
             "--controller-manager",
             "/controller_manager",
         ],
+        parameters=[robot_controllers],
     )
 
     initial_joint_controller_spawner = Node(
         package="controller_manager",
         executable="spawner",
         arguments=[initial_joint_controller, "-c", "/controller_manager"],
+        parameters=[robot_controllers],
     )
 
     nodes_to_start = [
